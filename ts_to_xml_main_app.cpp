@@ -14,8 +14,10 @@ int main(int argc, char* argv[])
 	char *outputFilename = argv[2];
 	puts(filename);
 	
+	//open the output xml file.
 	outputFile = fopen(outputFilename, "w+");
-
+	
+	//read input ts file
 	read_ts_file(filename);
 	
 	return 0;
